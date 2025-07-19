@@ -3,7 +3,11 @@ package SingletonPattern;
 public class Main {
     public static void main(String[] args) {
         Singleton s1 = Singleton.getInstance();
+        Singleton s2 = Singleton.getInstance();
 
-        System.out.println(s1.a);
+        System.out.println(s1+"\n"+s2);
+
+        s1.message();
+        s2.message();
     }
 }

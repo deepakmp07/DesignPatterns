@@ -4,7 +4,6 @@ public class Singleton {
 
     private static Singleton instance;
 
-    int a = 10;
     private Singleton() {}
 
     public static Singleton getInstance(){
@@ -14,5 +13,9 @@ public class Singleton {
         else{
             return instance;
         }
+    }
+
+    public void message() {
+        System.out.println("Singleton is created");
     }
 }
